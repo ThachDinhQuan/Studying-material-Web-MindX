@@ -1,0 +1,38 @@
+[
+    {
+        "title": "夜訪吸血鬼",
+        "artist": "Mayday",
+        "src": "../songs/angel.mp3",
+        "cover": "../img/logo.jpg"
+    },
+    {
+        "title": "2012",
+        "artist": "Mayday",
+        "src": "../songs/2012.mp3",
+        "cover": "../img/logo.jpg"
+    },
+    {
+        "title": "你不是真正的快樂",
+        "artist": "Mayday",
+        "src": "../songs/not-truly-happy.mp3",
+        "cover": "../img/logo.jpg"
+    },
+    {
+        "title": "Self aware",
+        "artist": "Temper City",
+        "src": "../songs/self-aware.mp3",
+        "cover": "../img/logo.jpg"
+    },
+    {
+        "title": "讓我照顧你",
+        "artist": "Mayday",
+        "src": "../songs/讓我照顧你.mp3",
+        "cover": "../img/logo.jpg"
+    },
+    {
+        "title": "End Of Begining",
+        "artist": "Djo",
+        "src": "../songs/end of begining.mp3",
+        "cover": "../img/logo.jpg"
+    }
+]

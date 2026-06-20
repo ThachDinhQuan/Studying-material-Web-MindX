@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening Songs</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="barContainer">
+        <div class="bar">
+            <div class="logo">
+                <img class="imgLogo"
+                    src="../img/logo.jpg"
+                    alt="logo"
+                    width="60"
+                    height="60"
+                >
+                <h2 class="logoName">Listening Songs</h2>
+            </div>
+            <div class="searchContainer">
+                <div class="searchBar">
+                    <img class="searchLogo"
+                        src="../img/download.png"
+                        alt="Search"
+                        width="35"
+                        height="35"
+                    >
+                    <input class="searchInput" type="text" placeholder="Search songs...">
+                </div>
+            </div>
+            <div class="user">
+                <img class="imgUser"
+                    src="../img/user.jpg"
+                    alt="User avatar"
+                    width="60"
+                    height="60">
+                <h2 class="userName">Guest</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <aside class="toolBarContainer">
+            <div class="toolBar">
+                <div class="sectionTitleRow">
+                    <h3>Favourite Songs</h3>
+                    <span class="favoriteCount">0</span>
+                </div>
+                <ul class="list favoriteList"></ul>
+            </div>
+        </aside>
+
+        <main class="mainAreaContainer">
+            <div class="mainArea songDetail">
+                <p class="eyebrow">Now selected</p>
+                <img class="detailCover" src="../img/logo.jpg" alt="Song cover" width="230" height="230">
+                <h1 class="songName">Choose a song</h1>
+                <p class="artistName">Playlist from local folder /songs</p>
+                <p class="songPath">Click a song on the right section to play.</p>
+
+                <div class="detailMeta">
+                    <div>
+                        <span>Duration</span>
+                        <strong class="detailDuration">--:--</strong>
+                    </div>
+                    <div>
+                        <span>Status</span>
+                        <strong class="detailStatus">Ready</strong>
+                    </div>
+                </div>
+
+                <div class="detailActions">
+                    <button class="detailPlayButton">Play</button>
+                    <button class="detailLikeButton">♡ Add favourite</button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="aboutSongContainer">
+            <div class="aboutSong playlistPanel">
+                <div class="sectionTitleRow">
+                    <h3>Playlist</h3>
+                    <span class="songCount">0 songs</span>
+                </div>
+                <div class="songList"></div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="playerContainer">
+        <div class="player">
+            <div class="nowplaying">
+                <img
+                    class="nowplayingCover"
+                    src="../img/logo.jpg"
+                    alt="Current song cover"
+                    width="56"
+                    height="56"
+                >
+                <div class="songInfo">
+                    <p class="songInfoName">Choose a song</p>
+                    <p class="songInfoSinger">Listening Songs</p>
+                </div>
+                <button class="likeButton" aria-label="Like song">♡</button>
+            </div>
+
+            <div class="playerCenter">
+                <div class="playpause" aria-label="Player controls">
+                    <button class="controlButton shuffleButton subtleButton" aria-label="Shuffle">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M16 3h5v5"></path>
+                            <path d="M4 7h4c5 0 5 10 10 10h3"></path>
+                            <path d="M16 21h5v-5"></path>
+                            <path d="M4 17h4c1.6 0 2.7-1 3.7-2.4"></path>
+                        </svg>
+                    </button>
+                    <button class="controlButton previousButton" aria-label="Previous song">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path class="filledIcon" d="M6 6h2v12H6zM18 6v12l-8.5-6z"></path>
+                        </svg>
+                    </button>
+                    <button class="controlButton playButton" aria-label="Play song">
+                        <span class="playIcon"></span>
+                    </button>
+                    <button class="controlButton nextButton" aria-label="Next song">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path class="filledIcon" d="M16 6h2v12h-2zM6 18V6l8.5 6z"></path>
+                        </svg>
+                    </button>
+                    <button class="controlButton repeatButton subtleButton" aria-label="Repeat">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M17 2l4 4-4 4"></path>
+                            <path d="M3 11V9a3 3 0 0 1 3-3h15"></path>
+                            <path d="M7 22l-4-4 4-4"></path>
+                            <path d="M21 13v2a3 3 0 0 1-3 3H3"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="progressWrap">
+                    <span class="time currentTime">0:00</span>
+                    <div class="progressBar" aria-label="Song progress">
+                        <div class="progress"></div>
+                    </div>
+                    <span class="time totalTime">0:00</span>
+                </div>
+            </div>
+
+            <div class="volume">
+                <button class="controlButton volumeButton" aria-label="Volume">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path class="filledIcon" d="M4 9v6h4l5 4V5L8 9H4z"></path>
+                        <path d="M16 8.5a5 5 0 0 1 0 7"></path>
+                        <path d="M18.5 6a8 8 0 0 1 0 12"></path>
+                    </svg>
+                </button>
+                <div class="volumeBar" aria-label="Volume level">
+                    <div class="volumeLevel"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>
